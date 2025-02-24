@@ -158,7 +158,8 @@ export async function onRequestPost(context) {  // Contents of context object
 
     // 构建文件ID
     const nameType = url.searchParams.get('uploadNameType') || 'default'; // 获取命名方式
-    const unique_index = time + Math.floor(Math.random() * 10000);
+    //const unique_index = time + Math.floor(Math.random() * 10000);
+    const unique_index = 0;
     let fullId = '';
     if (nameType === 'index') {
         // 仅前缀
